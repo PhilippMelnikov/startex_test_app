@@ -46,7 +46,6 @@ export default class SearchContainer extends Component {
         }
         axios.get(url)
             .then((res) => {
-                console.log('data: ', res.data);
                 this.setState({
                     items: res.data.items ? res.data.items : [],
                     currentPage: +res.data.currentPage,
