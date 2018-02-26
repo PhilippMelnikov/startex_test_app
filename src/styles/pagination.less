@@ -1,0 +1,44 @@
+.pagination{
+    margin: 4rem 0 0;
+    ul {
+        margin: 0;
+        font-size: 0;
+        text-align: center;
+        li {
+            line-height: 3.5rem;
+            color: #000000;
+            margin: 0 1rem;
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            @media screen and (max-device-width : @screen-xs) {
+                line-height: 10rem;
+                margin: 0 2rem;
+            }
+            span{
+                background: #f2f2f2;
+                border-radius: 50%;
+                display: block;
+                line-height: 3.5rem;
+                min-width: 3.5rem;
+                text-align: center;
+                &.active{
+                    margin: 0;
+                }
+                @media screen and (max-device-width : @screen-xs) {
+                    line-height: 10rem;
+                    min-width: 10rem;
+                }
+            }
+            a {
+                color: #000000;
+                border-bottom: 1px solid rgba(0, 0, 0, 0);
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 1px solid rgba(0, 0, 0, 1);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

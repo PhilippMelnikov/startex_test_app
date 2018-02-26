@@ -1,0 +1,26 @@
+.search{
+    &__input{
+        width: 100%;
+        padding: 1.4rem 0 1.4rem 1.6rem;
+        border: 1px solid #d1d5da;
+        border-radius: 3px;
+        outline: none;
+        font-size: 1.4rem;
+        transition: all 0.1s ease-in-out;
+        &:focus{
+           border: 1px solid @light-blue;
+           transition: all 0.1s ease-in-out;
+        }
+        @media only screen and (max-device-width: @screen-xs) {
+            padding: 3rem 0rem 3rem 2rem;
+            font-size: 4rem;
+        }
+    }
+    &__input-container{
+        padding: 0 1.6rem 2rem 0;
+        border-bottom: 1px solid @light-grey;
+    }
+    &__container{
+        padding-bottom: 4rem;
+    }
+}

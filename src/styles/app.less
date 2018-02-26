@@ -1,0 +1,50 @@
+html{
+    font-size: 62.5%;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+}
+li, a, span{
+    font-size: 1.6rem;
+    @media screen and (max-device-width : @screen-xs) {
+        font-size: 4rem;
+    }
+}
+h3{
+    font-size: 2rem;
+    @media screen and (max-device-width : @screen-xs) {
+        font-size: 5rem;
+    }
+}
+.container{
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-device-width : @screen-sm) {
+        padding: 0 3rem;
+    }
+}
+.basic-info-item{
+    line-height: 2.4rem;
+    margin-bottom: 0.6rem;
+    img{
+        width: 2rem;
+        margin-right: 1rem;
+        vertical-align: middle;
+        @media screen and (max-device-width : @screen-sm) {
+            width: 4rem;
+        }
+    }
+    span{
+        vertical-align: middle;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        @media screen and (max-device-width : @screen-sm) {
+            width: 3rem;
+        }
+    }
+}

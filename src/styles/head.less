@@ -1,0 +1,27 @@
+.head{
+    padding: 20px 0;
+    margin-bottom: 20px;
+    color: #666;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #eee;
+    &__logo{
+        display: inline-block;
+        width: 10rem;
+        vertical-align: middle;
+        @media screen and (max-device-width : @screen-xs) {
+            width: 12rem;
+        }
+    }
+    &__title{
+        display: inline-block;
+        margin-left: 20px;
+        color: #333;
+        vertical-align: middle;
+        h1{
+            font-size: 3rem;
+            @media screen and (max-device-width : @screen-xs) {
+                font-size: 5rem;
+            }
+        }
+    }
+}
